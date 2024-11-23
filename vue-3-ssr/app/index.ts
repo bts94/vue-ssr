@@ -10,6 +10,8 @@ export default <SSR.Scoped>function (ctx: SSR.Context): void {
 
     const app: Express = express();
 
+    console.log('app');
+    console.log(app);
     app.use(compression())
     app.use(assets());
 
